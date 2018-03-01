@@ -2,13 +2,14 @@ package com.shopify.hackdaysandroidv2.repository
 
 import com.shopify.hackdaysandroidv2.repository.model.Product
 import com.shopify.hackdaysandroidv2.repository.model.ProductCollection
+import com.shopify.hackdaysandroidv2.repository.model.Repository
 
 /**
  * Created by cavedon on 2018-03-01.
  */
-internal class GraphQLRepository {
+internal class GraphQLRepository: Repository {
 
-    fun getProducts(): List<Product> = listOf(
+    override fun getProducts(): List<Product> = listOf(
         Product(
             title = "Giftcard",
             totalVariants = 3,
@@ -37,7 +38,7 @@ internal class GraphQLRepository {
         )
     )
 
-    fun getCollections(): List<ProductCollection> = listOf(
+    override fun getCollections(): List<ProductCollection> = listOf(
         ProductCollection(
             title = "Giftcard collection",
             products = listOf(

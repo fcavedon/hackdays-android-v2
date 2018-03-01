@@ -3,7 +3,7 @@ package com.shopify.hackdaysandroidv2.repository.model
 /**
  * Created by cavedon on 2018-03-01.
  */
-internal data class Product(
+data class Product(
     val title: String,
     val totalInventory: Int = 0,
     val totalVariants: Int = 0,
